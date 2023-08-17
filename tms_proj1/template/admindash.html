@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <style>
+        /* Add your CSS styling here */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .course-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .course-card {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 10px;
+            width: 300px;
+        }
+
+        .course-card h2 {
+            margin: 0;
+        }
+
+        .feedback-form {
+            margin-top: 20px;
+        }
+
+        .feedback-form label,
+        .feedback-form textarea {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .feedback-form textarea {
+            height: 150px;
+        }
+
+        .feedback-form button {
+            display: block;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Admin Dashboard</h1>
+
+        <!-- Add Course Section -->
+        <h2>Add Course</h2>
+
+        <form action="" method="POST">
+         <fieldset>
+            <legend>Add Course Form</legend>
+            {% csrf_token %}
+            {{form2}}
+             <input type="submit", value="submit">
+         </fieldset>
+        </form>
+
+        <!-- Course List Section -->
+        <h2>Course List</h2>
+        <div class="course-list">
+            <!-- Sample Course Card -->
+            <div class="course-card">
+                <h2>Course 1</h2>
+                <p>Course ID: 12345</p>
+                <button>Remove Course</button>
+            </div>
+
+            <!-- Add more course cards dynamically using JavaScript -->
+        </div>
+
+        <!-- Feedback Section -->
+        <h2>Feedback</h2>
+        <form class="feedback-form">
+            <label for="feedbackTo">Feedback to:</label>
+            <select id="feedbackTo">
+                <option value="students">Students</option>
+                <option value="staff">Staff</option>
+            </select>
+
+            <label for="feedbackMessage">Feedback Message:</label>
+            <textarea id="feedbackMessage" required></textarea>
+
+            <button type="submit">Send Feedback</button>
+        </form>
+    </div>
+</body>
+</html>

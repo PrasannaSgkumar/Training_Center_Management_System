@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Dashboard</title>
+  <link rel="stylesheet" href="st.css">
+</head>
+<body>
+  <div class="dashboard-container">
+    <div class="sidebar">
+      <div class="profile-info">
+        <img src="path_to_profile_image.jpg" alt="Profile Picture">
+        <h2>John Doe</h2>
+        <p>Batch: ABC123</p>
+      </div>
+      <ul class="menu">
+        <li class="active">Attendance</li>
+        <li>Assignments</li>
+        <li>Teachers Feedback</li>
+        <li>Logout</li>
+      </ul>
+    </div>
+    <div class="content">
+      <div class="section">
+        <h3>Attendance Percentage</h3>
+        <p>Overall Attendance: 85%</p>
+      </div>
+      <div class="section">
+        <h3>Scores</h3>
+        <p>Maths: 95%</p>
+        <p>Science: 80%</p>
+        <p>History: 70%</p>
+        <!-- Add more subjects and scores as needed -->
+      </div>
+      <div class="section">
+        <h3>Leave Application</h3>
+        <form>
+          <label for="from-date">From:</label>
+          <input type="date" id="from-date" name="from-date">
+          <label for="to-date">To:</label>
+          <input type="date" id="to-date" name="to-date">
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

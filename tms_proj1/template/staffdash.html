@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher's Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 20px;
+        }
+
+        .sidebar {
+            flex: 0 0 200px;
+            background-color: #444;
+            color: #fff;
+            padding: 20px;
+        }
+
+        .content {
+            flex: 1;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .profile-pic {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .profile-name {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .profile-email {
+            font-size: 14px;
+            color: #aaa;
+        }
+
+        .logout-btn {
+            background-color: #f00;
+            color: #fff;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .dashboard-item {
+            margin-bottom: 20px;
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .dashboard-item h2 {
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        .attendance-percentage {
+            color: #00c;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .leave-application {
+            margin-top: 10px;
+        }
+
+        .leave-application input[type="date"] {
+            width: 100%;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .feedback-section {
+            margin-top: 20px;
+        }
+
+        .feedback-section textarea {
+            width: 100%;
+            height: 100px;
+            resize: vertical;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .send-feedback-btn {
+            background-color: #00c;
+            color: #fff;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .Post Assignments-btn {
+            background-color: #00c;
+            color: #fff;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Teacher's Dashboard</h1>
+    </header>
+    <div class="container">
+        <div class="sidebar">
+            <img src="path/to/profile-pic.jpg" alt="Profile Picture" class="profile-pic">
+            <div class="profile-name">name</div>
+            <div class="profile-email">e@example.com</div>
+            <button class="logout-btn">Log Out</button>
+        </div>
+        <div class="content">
+            <div class="dashboard-item">
+                <h2>Attendance Percentage</h2>
+                <div class="attendance-percentage">85%</div>
+            </div>
+            <div class="dashboard-item">
+                <h2>Admin Feedback</h2>
+                <p>.</p>
+            </div>
+            <div class="dashboard-item">
+                <h2>Leave Application</h2>
+                <form class="leave-application">
+                    <label for="from-date">From:</label>
+                    <input type="date" id="from-date" name="from-date">
+                    <label for="to-date">To:</label>
+                    <input type="date" id="to-date" name="to-date">
+                </form>
+            </div>
+            <div class="dashboard-item">
+                <h2>Send Feedback for Students</h2>
+                <div class="feedback-section">
+                    <textarea placeholder="Enter your feedback here..."></textarea>
+                    <button class="send-feedback-btn">Send Feedback</button>
+                </div>
+            </div>
+            <div class="dashboard-item">
+                <h2>Post Assignments</h2>
+                <p>.</p>
+                    <button class="Post Assignment">Post Assignment</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
